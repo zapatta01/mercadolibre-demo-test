@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+.App-header {
+  background-color: #ffe600;
+  flex-direction: column;
+}
+
+.App-header input[type='search'] {
+  margin-top: 10px;
+  margin-right: 0px;
+  margin-left: 10px;
+  width: 40%;
+  font-size: 18px;
+  border-radius: 2px;
+  background-color: #fff;
+  position: relative;
+  height: 35px;
+  border: none;
+}
+
+.center {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.App-header button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  background: #eeeeee;
+  border: none;
+  cursor: pointer;
+}
+
+/* .App-header button:hover {
+  background: #ccc;
+} */
+
+li {
+  list-style-type: none;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  background-color: #ffffff;
+  width: 70%;
+  border-radius: 4px;
+}
+
+/* .listado {
+  padding-top: 20px;
+  padding-bottom: 20px;
+} */
+
+a {
+  text-decoration: none;
+}
