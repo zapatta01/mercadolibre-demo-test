@@ -15,6 +15,7 @@ export default function ItemDetail() {
   const [item, setItem] = useState(null);
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
     if (itemId) {
@@ -27,11 +28,16 @@ export default function ItemDetail() {
           setItem(dataJson.item);
           setCategories(dataJson.categories);
         })
+        .catch(err => {
+          console.log({ err });
+          setHasError(true);
+        })
         .finally(() => setLoading(false));
     }
   }, [itemId]);
   return (
     <>
+      {hasError && <h1>Ha ocurrido un error :(</h1>}
       {loading ? (
         <>
           <p className='spinner'>Cargando...</p>
@@ -42,11 +48,7 @@ export default function ItemDetail() {
           {item && (
             <div className='item-detail'>
               <div className='main'>
-                <img
-                  className='item-img'
-                  src={item.picture}
-                  alt={item.title}
-                />
+                <img className='item-img' src={item.picture} alt={item.title} />
                 <div className='info'>
                   <div className='condition'>
                     {`${item.condition} - ${item.sold_quantity} vendidos`}

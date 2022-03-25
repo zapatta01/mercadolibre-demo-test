@@ -13,7 +13,7 @@ function App() {
           <Route exact path='/' />
           <Route path='items/:itemId' element={<ItemDetail />} />
           <Route path='items' element={<SearchedItems />} />
-          <Route path='*' element={<h1>There's nothing here!</h1>} />
+          <Route path='*' element={<h1>No hay nada por aca!</h1>} />
         </Routes>
       </main>
       <footer />

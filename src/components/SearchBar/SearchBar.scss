@@ -12,20 +12,21 @@ header {
     input {
       margin: 0.5rem 0rem 0.5rem 2rem;
       width: 85%;
-      border-radius: $border-radius 0 0 $border-radius;
-      border: none;
+      padding: 10px 15px;
       font-size: $font-size-search-bar-input;
-      padding: 0.5rem 1rem;
+      border-radius: $border-radius 0 0 $border-radius;
+      border: 1px solid transparent;
     }
 
     input:focus-visible {
       outline: $primary-color-white;
     }
 
-    button {
-      padding: 0.5rem;
+    > button {
       border-radius: 0px $border-radius $border-radius 0px;
-      border: none;
+      padding: 10px 15px;
+      font-size: $font-size-search-bar-input;
+      border: 1px solid transparent;
     }
 
     img {

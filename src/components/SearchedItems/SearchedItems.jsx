@@ -12,6 +12,7 @@ export default function SearchedItems() {
   const [categories, setCategories] = useState([]);
   const [searchParams] = useSearchParams();
   const [loading, setLoading] = useState(false);
+  const [hasError, setHasError] = useState(false);
 
   const limit = '4';
   const search = searchParams.get('search');
@@ -24,11 +25,16 @@ export default function SearchedItems() {
         setItems(json.items);
         setCategories(json.categories);
       })
+      .catch(err => {
+        console.log({ err });
+        setHasError(true);
+      })
       .finally(() => setLoading(false));
   }, [search]);
 
   return (
     <>
+      {hasError && <h1>Ha ocurrido un error :(</h1>}
       {loading ? (
         <>
           <p className='spinner'>Cargando...</p>
