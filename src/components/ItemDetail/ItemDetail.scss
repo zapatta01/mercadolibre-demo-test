@@ -1,0 +1,72 @@
+@import '../../styles/variables';
+
+.item-detail {
+  padding: 2rem;
+  background-color: $primary-color-white;
+  margin: auto;
+  border-radius: $border-radius;
+
+  .main {
+    display: flex;
+    margin-bottom: 5rem;
+
+    .item-img {
+      min-width: $img-detail-width;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .info {
+      padding-top: 2rem;
+
+      .condition {
+        display: flex;
+        text-transform: capitalize;
+        font-size: $font-size-detail-condition;
+        margin-bottom: 1rem;
+      }
+
+      h1 {
+        font-size: $font-size-detail-title;
+        margin-bottom: 1.5rem;
+      }
+
+      span {
+        font-size: $font-size-detail-price;
+      }
+
+      button {
+        cursor: pointer;
+        margin-top: 1.5rem;
+        width: 100%;
+        padding: 1rem;
+        color: $primary-color-white;
+        border-radius: $border-radius;
+        border: none;
+        font-size: 1rem;
+        background-color: $secondary-color-blue;
+
+        &:hover {
+          filter: brightness(110%);
+        }
+      }
+    }
+  }
+
+  .description {
+    h2 {
+      font-size: $font-size-detail-title-description;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      white-space: pre-line;
+      font-size: $font-size-detail-description;
+      max-width: 70%;
+    }
+  }
+}

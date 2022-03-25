@@ -1,0 +1,35 @@
+@import '../../styles/variables';
+
+header {
+  text-align: center;
+  background-color: $primary-color-yellow;
+  padding: 0.25rem;
+
+  form {
+    width: $container-width;
+    display: inline-block;
+
+    input {
+      margin: 0.5rem 0rem 0.5rem 2rem;
+      width: 85%;
+      border-radius: $border-radius 0 0 $border-radius;
+      border: none;
+      font-size: $font-size-search-bar-input;
+      padding: 0.5rem 1rem;
+    }
+
+    input:focus-visible {
+      outline: $primary-color-white;
+    }
+
+    button {
+      padding: 0.5rem;
+      border-radius: 0px $border-radius $border-radius 0px;
+      border: none;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+  }
+}

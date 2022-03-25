@@ -1,0 +1,64 @@
+@import '../../styles/variables';
+
+section {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background-color: $primary-color-white;
+  margin: auto;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid $primary-color-light;
+
+  a {
+    text-decoration: none;
+  }
+
+  &:last-of-type {
+    border: none;
+  }
+
+  .item-img {
+    width: $img-item-list-width;
+    height: $img-item-list-width;
+    border-radius: $border-radius;
+  }
+
+  .item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    width: 50%;
+    align-self: flex-start;
+
+    .price {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: $font-size-item-list-price;
+      font-weight: $font-weight-item-list-price;
+    }
+
+    .title {
+      margin: auto;
+      color: $primary-color-dark;
+      font-size: $font-size-item-list-title;
+      font-weight: $font-weight-item-list-title;
+    }
+  }
+
+  .item-state {
+    color: $primary-color-gray;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    flex-grow: 1;
+    margin: 2rem 0;
+    font-size: $font-size-item-list-state;
+  }
+}
