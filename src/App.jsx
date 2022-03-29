@@ -1,10 +1,10 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom'
 
-import ItemDetail from './components/ItemDetail/ItemDetail';
-import SearchedItems from './components/SearchedItems/SearchedItems';
-import SearchBar from './components/SearchBar/SearchBar';
+import ItemDetail from './components/ItemDetail/ItemDetail'
+import SearchedItems from './components/SearchedItems/SearchedItems'
+import SearchBar from './components/SearchBar/SearchBar'
 
-function App() {
+function App () {
   return (
     <>
       <SearchBar />
@@ -18,7 +18,7 @@ function App() {
       </main>
       <footer />
     </>
-  );
+  )
 }
 
-export default App;
+export default App

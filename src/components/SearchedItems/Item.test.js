@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
-import Item from './Item';
+import Item from './Item'
 
 test.skip('debe encontrar el texto del placeholder del input de busqueda', () => {
-  render(<Item />);
+  render(<Item />)
 //   screen.debug();
 })

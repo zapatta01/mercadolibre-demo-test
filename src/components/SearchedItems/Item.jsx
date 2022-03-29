@@ -1,14 +1,14 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
-import Price from '../shared/Price';
+import Price from '../shared/Price'
 
-export default function Item({
+export default function Item ({
   id,
   title,
   url,
   price,
   free_shipping,
-  stateName,
+  stateName
 }) {
   return (
     <article>
@@ -26,5 +26,5 @@ export default function Item({
       </div>
       <p className='item-state'>{stateName}</p>
     </article>
-  );
+  )
 }

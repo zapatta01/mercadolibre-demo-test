@@ -1,6 +1,6 @@
-export default function Price({ price }) {
-  const { amount } = price;
-  const priceFormat = new Intl.NumberFormat('de-DE').format(parseInt(amount));
+export default function Price ({ price }) {
+  const { amount } = price
+  const priceFormat = new Intl.NumberFormat('de-DE').format(parseInt(amount))
 
-  return <span>$ {priceFormat}</span>;
+  return <span>$ {priceFormat}</span>
 }

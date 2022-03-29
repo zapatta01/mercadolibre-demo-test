@@ -1,22 +1,22 @@
-import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import './SearchBar.scss';
+import { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import './SearchBar.scss'
 
-export default function SearchBar() {
-  const [searchText, setSearchText] = useState('');
-  const navigate = useNavigate();
+export default function SearchBar () {
+  const [searchText, setSearchText] = useState('')
+  const navigate = useNavigate()
 
   const loadItems = e => {
-    e.preventDefault();
+    e.preventDefault()
 
     navigate(`/items?search=${encodeURIComponent(searchText)}`, {
-      replace: true,
-    });
-  };
+      replace: true
+    })
+  }
 
   const handleChange = e => {
-    setSearchText(e.target.value);
-  };
+    setSearchText(e.target.value)
+  }
 
   return (
     <header>
@@ -39,5 +39,5 @@ export default function SearchBar() {
         </form>
       </div>
     </header>
-  );
+  )
 }
